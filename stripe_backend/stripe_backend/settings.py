@@ -15,7 +15,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "fallback-secret-key")
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
 
-ALLOWED_HOSTS = ["*", "18.175.235.240"]  # Add your EC2 IP or domain
+ALLOWED_HOSTS = ["*", "18.212.225.123"]  # Add your EC2 IP or domain
 
 # Application definition
 
@@ -43,7 +43,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://18.175.235.240"  # Allow frontend deployed on EC2
+    "http://18.212.225.123"  # Allow frontend deployed on EC2
 
 ]
 ROOT_URLCONF = 'stripe_backend.urls'

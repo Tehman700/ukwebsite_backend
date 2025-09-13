@@ -26,8 +26,8 @@ def create_checkout_session(request):
         payment_method_types=["card"],
         line_items=line_items,
         mode="payment",
-        success_url="http://18.175.235.240/#success",
-        cancel_url="http://18.175.235.240/#cancel",
+        success_url="http://18.212.225.123/#success",
+        cancel_url="http://18.212.225.123/#cancel",
     )
 
     return Response({"id": session.id})
